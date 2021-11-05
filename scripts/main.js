@@ -141,3 +141,5 @@ volumeSlider.addEventListener('click', (ev) => {
     syncVolume(volume);
     lastVolume = volume;
 });
+
+/*todo esto está muy bien explicado aquí https://www.youtube.com/watch?v=SuqEv5o0udw&ab_channel=iEatWebsites*/

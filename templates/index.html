@@ -8,53 +8,57 @@
     <title>Radio patio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.mi
-n.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+n.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../styles/main.sass">
 </head>
 <body class="d-flex align-items-center flex-column justify-content-center mx-auto text-center">
 <div id="caja-reproductor" class="d-flex align-items-center flex-column justify-content-center mx-auto text-center">
-    <video width="720" height="480" id="video">
-        <source src="../media/Dehao Zhang - Ching Chang Hon Chi.mp4" type="audio/mpeg">
-    </video>
 
-    <h1 class="text-center text-white">Controles</h1>
-    <section class="d-flex justify-content-center">
-        <div class="control-btn">
-            <div class="text-body"><span class="time-current text-white p-3"></span></div>
-        </div>
-        <div class="control-btn progress bg-light">
-            <div id="barra-tiempo" class="progress-filled"></div>
-        </div>
-        <div class="control-btn">
-            <a href="" id="control-previous" class="material-icons text-body text-decoration-none" title="Previous">skip_previous</a>
-        </div>
-        <div class="control-btn">
-            <a href="" id="control-stop" class="material-icons text-body text-decoration-none" title="Stop">stop</a>
-        </div>
-        <div class="control-btn">
-            <a href="" id="control-play"
-               class="material-icons text-body text-decoration-none" title="Play / Pause">play_arrow</a>
-        </div>
-        <div class="control-btn">
-            <a href="" id="control-next" class="material-icons text-body text-decoration-none" title="Next">skip_next</a>
-        </div>
-        <div class="d-flex align-items-center">
-            <ul class="speed-list">
-                <li class="speed-item" data-speed="0.5">0.5x</li>
-                <li class="speed-item" data-speed="0.75">0.75x</li>
-                <li class="speed-item active" data-speed="1">1x</li>
-                <li class="speed-item" data-speed="1.5">1.5x</li>
-                <li class="speed-item" data-speed="2">2x</li>
-            </ul>
-        </div>
-        <div class="d-flex align-items-center">
-            <div class="volume-slider">
-                <div class="volume-filled"></div>
+    <div id="marco-video">
+
+        <video width="720" height="480" id="video">
+            <source src="../media/Dehao Zhang - Ching Chang Hon Chi.mp4" type="audio/mpeg">
+        </video>
+
+        <section id="botonera" class="d-flex justify-content-center">
+            <div class="control-btn">
+                <div class="text-body"><span class="time-current text-white p-3"></span></div>
             </div>
-            <a href="" id="control-volume" class="material-icons text-decoration-none" title="Volume">volume_up</a>
-        </div>
-    </section>
-    <h1 class="text-white">Audios</h1>
+            <div class="control-btn progress bg-light">
+                <div id="barra-tiempo" class="progress-filled"></div>
+            </div>
+            <div class="control-btn">
+                <a href="" id="control-previous" class="material-icons text-body text-decoration-none" title="Previous">skip_previous</a>
+            </div>
+            <div class="control-btn">
+                <a href="" id="control-stop" class="material-icons text-body text-decoration-none" title="Stop">stop</a>
+            </div>
+            <div class="control-btn">
+                <a href="" id="control-play"
+                   class="material-icons text-body text-decoration-none" title="Play / Pause">play_arrow</a>
+            </div>
+            <div class="control-btn">
+                <a href="" id="control-next" class="material-icons text-body text-decoration-none" title="Next">skip_next</a>
+            </div>
+            <div class="d-flex align-items-center">
+                <ul class="speed-list">
+                    <li class="speed-item" data-speed="0.5">0.5x</li>
+                    <li class="speed-item" data-speed="0.75">0.75x</li>
+                    <li class="speed-item active" data-speed="1">1x</li>
+                    <li class="speed-item" data-speed="1.5">1.5x</li>
+                    <li class="speed-item" data-speed="2">2x</li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="volume-slider">
+                    <div class="volume-filled"></div>
+                </div>
+                <a href="" id="control-volume" class="material-icons text-decoration-none" title="Volume">volume_up</a>
+            </div>
+        </section>
+    </div>
+    <h1 class="text-white">Videos</h1>
     <div class="d-flex align-items-center justify-content-center mx-auto text-center">
         <section class="d-flex justify-content-center mx-auto text-center">
             <section class="d-flex justify-content-center">
@@ -68,7 +72,6 @@ n.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0
     </div>
 
 </div>
-
 
 
 <script src="../scripts/main.js"></script>

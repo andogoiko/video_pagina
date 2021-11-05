@@ -25,8 +25,8 @@ body
 
   #caja-reproductor
     background: linear-gradient(90deg, gray 0%, pink 100%)
-    width: 50%
-    height: 40%
+    width: 90rem
+    height: 45rem
 
     border-left: 3px solid pink
     border-right: 3px solid gray
@@ -35,6 +35,20 @@ body
     background-position: 0 100%, 0 0
     background-repeat: no-repeat
     background-clip: border-box
+
+  #marco-video
+    max-width: 720px
+    position: relative
+    overflow: hidden
+
+  #botonera
+    position: absolute
+    bottom: 0
+    width: 100%
+    transform: translateY(-43px) translateX(0)
+    transition: 0.3s
+    flex-wrap: wrap
+    background: rgba(0, 0, 0, 0.6)
 
   #barra-tiempo
     background-color: pink
@@ -53,7 +67,7 @@ body
     text-align: center
 
     li
-      font-size: 1.5rem
+      font-size: 0.75rem
       padding: 5px
       cursor: pointer
       color: white
