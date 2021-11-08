@@ -142,4 +142,7 @@ volumeSlider.addEventListener('click', (ev) => {
     lastVolume = volume;
 });
 
+//request full screen
+//exitfullscreen
+
 /*todo esto está muy bien explicado aquí https://www.youtube.com/watch?v=SuqEv5o0udw&ab_channel=iEatWebsites*/

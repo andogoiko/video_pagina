@@ -2,12 +2,16 @@ body
   height: 100vh
   background: linear-gradient(90deg, gray 0%, pink 100%)
 
+  .text-body
+    margin-top: 15px !important
+
   .progress
     cursor: pointer
     height: 8px
     width: 200px
     background: rgba(60, 60, 60, 0.6)
     margin: auto
+    margin-left: -15px !important
     border-radius: 6px
     left: 20px
     bottom: 100%
@@ -37,7 +41,7 @@ body
     background-clip: border-box
 
   #marco-video
-    max-width: 720px
+    max-width: 900px
     position: relative
     overflow: hidden
 
@@ -45,10 +49,14 @@ body
     position: absolute
     bottom: 0
     width: 100%
-    transform: translateY(-43px) translateX(0)
+    transform: translateY(100%) translateX(0)
     transition: 0.3s
     flex-wrap: wrap
     background: rgba(0, 0, 0, 0.6)
+
+  #marco-video:hover
+    #botonera
+      transform: translateY(-5.2px)
 
   #barra-tiempo
     background-color: pink
@@ -89,5 +97,17 @@ body
       border-radius: 6px
       transition: width 0.2s ease-in-out
 
+  #control-previous
+    color: white !important
+
+  #control-stop
+    color: white !important
+
+  #control-play
+    color: white !important
+
+  #control-next
+    color: white !important
+
   #control-volume
-    color: black
+    color: white !important
