@@ -183,6 +183,6 @@ document.querySelector('#video').addEventListener('dblclick', (ev) => {
         fullscreenIcon.textContent = 'fullscreen';
     }
 });
-
+//https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
 
 /*todo esto está muy bien explicado aquí https://www.youtube.com/watch?v=SuqEv5o0udw&ab_channel=iEatWebsites*/
