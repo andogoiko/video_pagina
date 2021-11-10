@@ -5,28 +5,6 @@ body
   .text-body
     margin-top: 15px !important
 
-  .progress
-    cursor: pointer
-    height: 8px
-    width: 200px
-    background: rgba(60, 60, 60, 0.6)
-    margin: auto
-    margin-left: -15px !important
-    border-radius: 6px
-    left: 20px
-    bottom: 100%
-    transition: height 0.1s ease-in-out
-
-    &:hover
-      height: 10px
-
-    .progress-filled
-      background: #0094ff
-      width: 0
-      height: 100%
-      border-radius: 6px
-      transition: all 0.1s
-
   #caja-reproductor
     background: linear-gradient(90deg, gray 0%, pink 100%)
     width: 90rem
@@ -41,61 +19,91 @@ body
     background-clip: border-box
 
   #marco-video
-    max-width: 900px
+    width: 900px
+    height: auto
     position: relative
     overflow: hidden
 
-  #botonera
-    position: absolute
-    bottom: 0
-    width: 100%
-    transform: translateY(100%) translateX(0)
-    transition: 0.3s
-    flex-wrap: wrap
-    background: rgba(0, 0, 0, 0.6)
+    &:hover
+      #botonera
+        transform: translateY(-5.2px)
 
-  #marco-video:hover
+    video
+      cursor: pointer
+      &:fullscreen
+        width: 100vh !important
+        height: 100vw !important
+
     #botonera
-      transform: translateY(-5.2px)
+      position: absolute
+      bottom: 0
+      width: 100%
+      transform: translateY(100%) translateX(0)
+      transition: 0.3s
+      flex-wrap: wrap
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9))
 
-  #barra-tiempo
-    background-color: pink
+      .progress
+        cursor: pointer
+        height: 8px
+        width: 900px
+        background: rgba(60, 60, 60, 0.6)
+        margin: auto
+        margin-top: 5px
+        border-radius: 6px
+        left: 20px
+        bottom: 100%
+        transition: height 0.1s ease-in-out
+
+        &:hover
+          height: 10px
+
+        .progress-filled
+          background: #0094ff
+          width: 0
+          height: 100%
+          border-radius: 6px
+          transition: all 0.1s
+
+      #barra-tiempo
+        background-color: pink
+
+      .material-icons
+        font-size: 2.5rem
+        margin-top: 0.25rem
+
+      .speed-list
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        text-align: center
+
+        li
+          font-size: 0.75rem
+          padding: 5px
+          cursor: pointer
+          color: white
+
+          &:hover, &.active
+            color: pink
+
+      .volume-slider
+        cursor: pointer
+        height: 8px
+        width: 80px
+        background: white
+        border-radius: 6px
+
+        .volume-filled
+          background: pink
+          width: 100%
+          height: 100%
+          border-radius: 6px
+          transition: width 0.2s ease-in-out
 
   .btn
     background-color: pink
-  .material-icons
-    font-size: 2.5rem
-    margin-top: 0.25rem
-
-  .speed-list
-    list-style: none
-    margin: 0
-    padding: 0
-    display: flex
-    text-align: center
-
-    li
-      font-size: 0.75rem
-      padding: 5px
-      cursor: pointer
-      color: white
-
-      &:hover, &.active
-        color: pink
-
-  .volume-slider
-    cursor: pointer
-    height: 8px
-    width: 80px
-    background: white
-    border-radius: 6px
-
-    .volume-filled
-      background: pink
-      width: 100%
-      height: 100%
-      border-radius: 6px
-      transition: width 0.2s ease-in-out
 
   #control-previous
     color: white !important
@@ -110,4 +118,7 @@ body
     color: white !important
 
   #control-volume
+    color: white !important
+
+  #fullscreen
     color: white !important
